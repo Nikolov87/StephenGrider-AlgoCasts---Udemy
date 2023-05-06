@@ -14,20 +14,22 @@
 //     return reverse;
 // }
 
-//3.solution
-function reverse(str) {
-    return str.split('').reduce((rev, char) => char + rev, '')
- }
+
 
 //2.solution
-// function reverse(str) {
-//    let reversed = '';
+function reverse(str) {
+   let reversed = '';
 
-//    for (let character of str) {
-//     reversed = character + reversed;
-//    }
-//    return reversed
-// }
+   for (let character of str) {
+    reversed = character + reversed;
+   }
+
+   return reversed
+}
+
+ module.exports = reverse;
+
+
 
 //1.solution
 // function reverse(str) {
@@ -37,5 +39,9 @@ function reverse(str) {
 //     .join('');
 // }
 
-module.exports = reverse;
+//3.solution
+// function reverse(str) {
+    //     debugger;
+    //     return str.split('').reduce((rev, char) => char + rev, '')
+    //  }
 // console.log(reverse('hello'));
